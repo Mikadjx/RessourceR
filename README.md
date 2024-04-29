@@ -2,6 +2,9 @@
 
 <img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef"  />
 
+<img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/dac12944-060d-4101-b9ea-4cf65ea162db"  />
+
+
 ## Description
 
 Ressource Relationnelles est une plateforme conçue pour améliorer la qualité des liens relationnels, avec l'objectif d'enrichir la qualité de vie des citoyens. Cette application propose des ressources et des outils pour créer, renforcer et enrichir les relations interpersonnelles à travers une interface web et mobile.
