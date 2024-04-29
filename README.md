@@ -6,6 +6,7 @@
 
 
 
+
 ## Description
 
 Ressource Relationnelles est une plateforme conçue pour améliorer la qualité des liens relationnels, avec l'objectif d'enrichir la qualité de vie des citoyens. Cette application propose des ressources et des outils pour créer, renforcer et enrichir les relations interpersonnelles à travers une interface web et mobile.
