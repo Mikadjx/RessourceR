@@ -1,0 +1,64 @@
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img class="img_citoyen" src="{{ asset('assets/Images/icon_citoyen.png') }}" alt="Image_rep_francaise">
+            <a class="logo_Ressource" href="">(Re)Sources<br>Relationnelles</a>
+        </div>
+        <ul class="links">
+            <li><a href="{{ path('app_home') }}">Accueil</a></li>
+            {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                <li class="dropdown">
+                    <a style="margin-right:10px;" href="#">Ressources</a>
+                    <span><i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="/create/ressource">Créer une ressource</a>
+                        <a href="#">Editer une ressource</a>
+                    </div>
+                </li>
+            {% else %}
+                <li class="display"></li>
+            {% endif %}
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div class="buttons">   
+            {% if is_granted('ROLE_ADMIN') %}    
+                <a class="btn_admin" href="{{ path('admin') }}">
+                    <i style="margin-right:8px;"  class="fa-solid fa-user-tie"></i>
+                    Administrateur
+                </a>
+            {% endif %}
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <a class="action-button" href="{{ path('app_logout') }}">
+                    <i style="margin-right:8px;" class="fa-solid fa-right-from-bracket"></i>Se déconnecter
+                </a>
+            {% else %}
+                <a class="action-button pro" href="{{ path('app_login') }}">
+                    <i style="margin-right:8px;" class="fa-solid fa-user"></i>Se connecter
+                </a>
+                <a class="action-button" href="{{ path('app_register') }}">S'inscrire</a>
+            {% endif %}
+        </div>
+        <div class="burger-menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="burger-menu">
+        <ul class="links">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <li><a href="{{ path('app_ressource') }}">Accueil</a></li> 
+                <li><a href="{{ path('app_create_ressource') }}">Créer une ressource</a></li> 
+                <li><a href="#">Editer une ressource</a></li>          
+                {% if is_granted('ROLE_ADMIN') %}    
+                    <li><a href="{{ path('admin') }}"><i class="fa-solid fa-user-tie"></i>Tableau de bord</a></li>   
+                {% endif %}
+                <li><a href="{{ path('app_logout') }}"><i class="fa-solid fa-arrow-right-from-bracket"></i>Se déconnecter</a></li>
+            {% else %}
+                <li><a href="{{ path('app_home') }}">Accueil</a></li>
+                <li><a href="{{ path('app_register') }}">Inscription</a></li>
+                <li><a href="{{ path('app_login') }}">Connexion</a></li>
+                <li><a href="#">Supports</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</header>

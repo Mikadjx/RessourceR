@@ -1,0 +1,123 @@
+/* Styles par défaut */
+
+/* Card */
+div.content {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Bandeau de présentation */
+.bandeauPresentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titreRessource {
+    width: 70%;
+    text-align: left;
+}
+
+.dateRessource {
+    font-size: 14px;
+    color: #666;
+}
+
+.imageRessource img {
+    width: 100%; 
+    height: auto;
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+/* Contenu de la ressource */
+.contentRessource {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Liens */
+.lien {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.lienText {
+    flex: 1;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+}
+
+.lienText img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.lienText a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lienText:hover a {
+    color: #0051a7;
+}
+
+.button_submit i {
+    color: white;
+}
+
+/* Formulaire commentaire */
+.commentaire-wrapper {
+    position: relative;
+}
+
+.inputCommentaire {
+    width: calc(100% - 0.1px);
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.button_submit {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #0051a7b9;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media queries pour tablettes et mobiles */
+
+@media (max-width: 1024px) {
+    /* Ajustements pour les tablettes */
+    .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustements pour les petits écrans (tablettes et mobiles) */
+    .content {
+        width: 100%;
+    }
+}

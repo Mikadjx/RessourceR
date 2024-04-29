@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ressource '{{ ressource.getResTitre }}'{% endblock %}
+
+
+{% block stylesheets %}
+    <link href="{{ asset('assets/css/showressource.css') }}" rel="stylesheet" />
+{% endblock %} 
+
+{% block body %}
+    <div class="redirectContent">
+        <label class="labelRedirect"><a class="labelRedirect" href="#">Accueil</a> > Espace Personnel > Ressources</label>
+    </div>
+    <div class="PrimaryContent"> 
+        <div class="content">
+            <div class="bandeauPresentation">
+                <div class="titreRessource">
+                    <h2>{{ ressource.getResTitre() }}</h2>
+                    <p class="dateRessource">{{ ressource.getResDateCreation() | date('d/m/Y') }}</p>
+                </div>
+                <div class="imageRessource">
+                        <img style="width:100%;height:auto;object-fit:cover;border-radius:5px; max-height:200px;" src="{{ vich_uploader_asset(ressource, 'imageFile') }}" alt="Image de la ressource">
+                </div>
+            </div>
+            <div class="contentRessource">
+                <p>{{ ressource.getResContent() }}</p>
+            </div>
+            <div class="contentCommentaire">
+                {{ form_start(commentaire_form) }}
+                    <div class="commentaire-wrapper">
+                        {{ form_widget(commentaire_form.com_content, {'attr': {'class': 'inputCommentaire'}}) }}
+                        <button type="submit" class="button_submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                {{ form_end(commentaire_form) }}
+            </div>
+            <div class="lien">
+                <div class="lienText">
+                    <img src="{{ asset('assets/icons/discussion.png') }}" alt="Créer une discussion">
+                    <a href="#" class="lien">CRÉER UNE DISCUSSION</a>
+                </div>
+                <div class="lienText">
+                    <img src="{{ asset('assets/icons/favori.png') }}" alt="Ajouter aux favoris">
+                    <a href="#" class="lien">AJOUTER AUX FAVORIS</a>
+                </div>
+                <div class="lienText">
+                    <img src="{{ asset('assets/icons/partager.png') }}" alt="Partager">
+                    <a href="#" class="lien">PARTAGER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

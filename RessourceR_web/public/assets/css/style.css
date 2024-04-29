@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(198, 199, 204, 0.171);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1600px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.logo_Ressource {
+    position: absolute;
+    width: 168px;
+    top: 30px;
+    left: 65px;
+    background: linear-gradient(180deg, rgb(61, 86, 110) 38.85%, rgb(255, 51, 51) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Noto Serif-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    line-height: normal;
+    color: transparent;
+    cursor: pointer;
+}
+
+.img_citoyen {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.navbar .burger-menu-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Boutton register*/
+
+.action-button {
+
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 6px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #0051a7;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.action-button:hover {
+    background: #0051a7d7;
+    color: black;
+
+}
+
+/*Boutton login */
+
+.pro {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 4px 4px #00000040;
+    border-color: #0051a718;
+}
+
+.pro:hover {
+    background: #cfdeec2f;
+    color: black;
+}
+
+/*Boutton admin */
+
+.btn_admin {
+
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 6px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(208, 123, 12, 0.927);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btn_admin:hover {
+    background: #e49931ed;
+    color:black;
+}
+
+
+/*Burger-Menu */
+
+.burger-menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2.2rem;
+    top: 80px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: rgb(255, 254, 254);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0px 4px 4px #00000040;
+    z-index: 2;
+}
+
+.burger-menu.open {
+    height: 470px;
+    display: block;
+    margin-top: 30px;
+    width: 200px;
+
+}
+
+.burger-menu .action-button {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.burger-menu li a {
+    padding: 1.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/*Liste déroulante */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 195px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 2px;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: small;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Card */
+
+.container_card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.carousel-item .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item .card {
+    margin: 10px;
+}
+
+/*Boutton */
+
+.btn_default {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.btn_default .form_btn {
+    background-color: transparent;
+    background: #FF0000;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    width: 13rem;
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.btn_default #btn-2 {
+    background-color: #0051A7;
+}
+
+/* Lien de pages */
+
+.redirectContent {
+    padding: 15px
+}
+
+.labelRedirect {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.espacePersonnelTexte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.container_mdp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.img_letter {
+display: none;           
+ }
+
+ .search {
+    margin-top: 30px;
+ }
+
+ /* Modal */
+ 
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background: #3D566E;
+
+}
+
+footer .part1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+footer h4 {
+    color: white;
+}
+
+
+footer ul {
+    margin-top: 2rem;
+}
+
+footer ul li {
+    margin: 0.2rem 0;
+    font-size: 1.6rem;
+}
+
+footer ul li a {
+    color: white;
+
+}
+
+footer .legale a {
+    font-size: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer .legale {
+    margin-top: 150px;
+    height: 100px;
+}
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 0.2px solid #ccc;
+    margin: 0 25% 0 25%;
+    padding: 0;
+    width: 50%;
+}
+
+
+/*RESPONSIVE */
+
+@media (max-width: 1024px) {
+    .navbar .links {
+        margin-left: 100px;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    .card {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .navbar .links,
+    .navbar .action-button {
+        display: none;
+    }
+
+    .navbar .burger-menu-button {
+        display: block;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .card {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .btn_admin {
+        display:none;
+    }
+}
+
+@media(max-width: 768px) {
+
+    footer .link {
+        font-size: 1rem;
+    }
+
+    footer h4 {
+        font-size: 1.2rem;
+    }
+
+    .container_card {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-top: 50px;
+    }
+
+    
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 740px) {
+    footer {
+        height: 500px;
+    }
+
+    footer .part1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #3D566E;
+        text-align: center;
+    }
+
+    footer .infos {
+        margin-top: 4rem;
+    }
+
+    footer .contact {
+        margin-top: 4rem;
+    }
+
+    footer .legale {
+        margin-top: 0;
+        height: 100px;
+        background: #3D566E;
+    }
+
+    footer .legale a {
+        margin-top: 2rem;
+    }
+.btn_default {
+    justify-content: space-around;
+    margin-left: 5px;
+}
+}
+
+
+@media (max-width: 576px) {
+
+    .burger-menu {
+        right: 2rem;
+        width: unset;
+    }
+    .btn_default {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn_default #btn-2 {
+        margin-top: 50px;
+        }
+        .img_letter {
+            display: block;
+            width: 100%;
+            height: 200px;
+            filter: brightness(50%);            
+         }
+        }
+       
+
+
+@media (max-width: 320px) {
+
+    .img_citoyen {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .logo_Ressource {
+        display: flex;
+        margin-left: 20px;
+    }
+}

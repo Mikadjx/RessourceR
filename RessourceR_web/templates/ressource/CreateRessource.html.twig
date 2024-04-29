@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer une Ressource{% endblock %}
+
+{% block footer %} {% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('assets/css/createressource.css')}}"rel="stylesheet" />
+{% endblock %} 
+
+{% block body %}
+
+
+    <div class="redirectContent">
+        <label class="labelRedirect"><a class="labelRedirect" href="{{ path('app_ressource') }}">Accueil</a> > Espace Personnel > Ressources</label>
+    </div>
+    <main>
+        <div class="PrimaryContent">
+            <div class="content">
+                <h1>Créer une Ressource</h1>
+                {{ form_start(ressource_form, {'attr': {'class': 'form'}}) }}
+                    <div class="content_input">
+                        <label class="label_input">Titre</label>
+                        {{ form_widget(ressource_form.res_titre, {'attr': {'class': 'input'}}) }}
+                        
+                        {# <label class="label_input">Type de Catégories</label>
+                        {{ form_widget(ressource_form.categories, {'attr': {'class': 'input'}}) }} #}
+    
+                        <label class="label_input">Charger une Image</label>
+                        {{ form_widget(ressource_form.imageFile, {'attr': {'class': 'input_file'}}) }}
+    
+                        <label class="label_input">Contenu de la ressource</label>
+                        {{ form_widget(ressource_form.res_content, {'attr': {'class': 'input_textarea'}}) }}
+                    </div>
+                    {{ form_widget(ressource_form.Submit, {'attr': {'class': 'button_submit'}}) }}    
+                {{ form_end(ressource_form) }}
+            </div>
+        </div> 
+    </main>
+{% endblock %}

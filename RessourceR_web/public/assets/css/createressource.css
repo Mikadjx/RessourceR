@@ -1,0 +1,140 @@
+
+.PrimaryContent {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    max-width: 960px;
+    min-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 15px;
+    
+}
+
+
+.input, .input_textarea, .input_file {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-top: 8px;
+}
+
+.input_textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.input_file {
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 6px 12px;
+    background: #084cdf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content_input {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.label_input {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+.button_submit {
+    padding: 10px 20px;
+    background-color: #0051A7;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+
+.labelRedirect {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.redirectContent {
+    padding: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .PrimaryContent {
+        padding:60px;
+
+    }
+    /* Tablette */
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%; /* Largeur de la carte sur les petits écrans */
+        padding: 15px;
+    }
+    .PrimaryContent {
+        padding:30px;
+        flex-direction: column;
+      
+    }
+    /* Mobile */
+    .content_input {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    /* petit mobile */
+    .content {
+        width: 90%;
+        min-width: auto;
+        margin: 17px;
+    }
+
+    .label_input {
+        font-size: 12px;
+    }
+    .PrimaryContent {
+        padding:15px;
+    }
+    @media (max-width: 400px) {
+        /* Adaptations supplémentaires pour les plus petits téléphones mobiles */
+        .content {
+            padding: 10px;
+        }
+    
+        .input {
+            padding: 6px;
+        }
+    
+        .button_submit {
+            padding: 8px 16px;
+            font-size: 12px;
+        }
+        .PrimaryContent {
+            padding:5px;
+        }
+    }
+}

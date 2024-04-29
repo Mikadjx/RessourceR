@@ -1,0 +1,746 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DataPersonalSecurityController!{% endblock %}
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('assets/css/dataPersonal.css') }}">
+<link rel="apple-touch-icon"
+    href="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/dsfr/favicon/apple-touch-icon.png">
+<!-- 180×180 -->
+<link rel="icon" href="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/dsfr/favicon/favicon.svg"
+    type="image/svg+xml">
+<link rel="shortcut icon"
+    href="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/dsfr/favicon/favicon.ico/"
+    type="image/x-icon"><!-- 32×32 -->
+
+
+<link href="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/css/sp-dsfr.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+<section class="main">
+<div class="container my-5">
+    <div class="row">
+        <div class="col">
+         <article class="article">
+                <h1 id="titlePage">Données personnelles et sécurité</h1>
+                <p class="sp-text--gray fr-text--xs" data-test="date-maj">Vérifié le 13 juillet 2022 - Direction de
+                    l&#39;information légale et administrative (Premier ministre)</p>
+                <div class="fr-text--lg">
+                    <p>La plateforme technique de volt.mazecity.eu a fait l'objet d'un travail préparatoire approfondi
+                        avec la CNIL (Commission nationale de l'informatique et des libertés) en vue d'offrir aux
+                        usagers toutes les garanties en matière de sécurité et de confidentialité de leurs données.</p>
+                    <p>L'hébergement de la plateforme service-public.fr est réalisé sur un site dont les locaux et
+                        l'accès aux machines d'exploitation sont contrôlés. Les flux de données et les données
+                        personnelles sont chiffrés afin de prévenir des tentatives de détournement d'information. Les
+                        accès à la plateforme sont conservés afin de garantir leur traçabilité.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="fr-pt-4w fr-mb-4w">
+                    <div class="sp-chapter-intro fr-mb-3w">
+                        <div class="sp-chapter-intro-btn rs_skip"><button type="button"
+                                class="fr-link sp-btn sp-btn-see-all see-all" data-label-unfold="Tout déplier"
+                                data-label-fold="Tout replier" data-test="button-plier-deplier"
+                                data-xiti-type="navigation" , data-control-seeall="chapters"
+                                data-xiti-name="Particuliers::Footer::Depliant::Tout_deplier_P10001_Donnees_personnelles_et_securite">
+                                Tout déplier
+                            </button></div>
+                    </div>
+                    <div data-toggle-scope-seeall="chapters">
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-1"
+                                    data-target="#bloc-chapter-1"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Qui_traite_vos_données ?"
+                                    aria-controls="bloc-chapter-1"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Qui traite vos données
+                                            ?</span><svg focusable="false" aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-1"
+                                aria-labelledby="bloc-chapter-aria-1">
+                                <div class="sp-chapter-content">
+                                    <p data-test="contenu-texte"><strong>La Direction de l'Information Légale et
+                                            Administrative (DILA)</strong>, représentée par sa directrice Anne
+                                        Duclos-Grisier est responsable du traitement des données personnelles pour le
+                                        site service-public.fr.</p>
+                                    <p data-test="contenu-texte">Les coordonnées de la DILA sont les suivantes :</p>
+                                    <p data-test="contenu-texte">26 rue Desaix, 75727 Paris cedex 15</p>
+                                    <p data-test="contenu-texte">Tél. Standard : 01 40 58 75 00</p>
+                                    <p data-test="contenu-texte">La DILA s'engage à ce que les traitements de données
+                                        personnelles effectués sur service-public.fr soient conformes au règlement
+                                        général sur la protection des données (RGPD) et à la loi Informatique et
+                                        Libertés.</p>
+                                    <p data-test="contenu-texte">Dans le cadre de la mise à disposition de téléservices,
+                                        la DILA transmet les informations collectées aux administrations partenaires
+                                        compétentes pour instruire les démarches accomplies via service-public.fr.</p>
+                                    <p data-test="contenu-texte">Les données peuvent dans une certaine mesure être
+                                        rendues accessibles aux prestataires (sous-traitants au sens de la
+                                        règlementation) de la DILA sous son contrôle, pour les stricts besoins et dans
+                                        les limites de leurs missions. Ces sous-traitants sont soumis à une obligation
+                                        de confidentialité et ne peuvent utiliser les données à caractère personnel que
+                                        conformément à la législation applicable et aux dispositions contractuelles
+                                        spécifiquement conclues.</p>
+                                    <p data-test="contenu-texte">En tant que responsable de traitement, la DILA s'engage
+                                        à prendre toutes les mesures nécessaires permettant de garantir la sécurité et
+                                        la confidentialité des informations fournies par l'usager. Elle s'engage à
+                                        n'opérer aucune commercialisation des informations et documents transmis par
+                                        l'usager au moyen du site service-public.fr, et à ne pas les communiquer à des
+                                        tiers, en dehors des cas prévus par la loi, notamment, en cas de réquisition
+                                        judiciaire.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-2"
+                                    data-target="#bloc-chapter-2"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Finalités"
+                                    aria-controls="bloc-chapter-2"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Finalités</span><svg
+                                            focusable="false" aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-2"
+                                aria-labelledby="bloc-chapter-aria-2">
+                                <div class="sp-chapter-content">
+                                    <p data-test="contenu-texte">La DILA met en œuvre des traitements de données à
+                                        caractère personnel, sur la base des missions d'intérêt public dont elle est
+                                        investie, pour les finalités suivantes :</p>
+                                    <ul class="sp-item-list">
+                                        <li>La création et la gestion d'un compte personnel ;</li>
+                                        <li>Proposer au public un espace de stockage en ligne ;</li>
+                                        <li>Simplifier des démarches et formalités administratives effectuées par le
+                                            public en mettant à leur disposition des téléservices, et en assurer la
+                                            traçabilité et le suivi ;</li>
+                                        <li>Répondre au public sur toute question ou démarche administratives via un
+                                            formulaire de contact ;</li>
+                                        <li>Mettre à disposition du public l'annuaire de l'Administration ;</li>
+                                        <li>Assurer le bon fonctionnement du site et améliorer votre expérience de
+                                            navigation.</li>
+                                    </ul>
+                                    <p data-test="contenu-texte">La DILA diffuse une lettre d'information au public sur
+                                        la base du consentement de ses abonnés.</p>
+                                    <p data-test="contenu-texte">Les données collectées dans le cadre de la mise en
+                                        œuvre de chacune des finalités décrites ci-avant sont limités au strict
+                                        nécessaire.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-3"
+                                    data-target="#bloc-chapter-3"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Catégories_de_données_traitées_et_durée_de_conservation"
+                                    aria-controls="bloc-chapter-3"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Catégories de données
+                                            traitées et durée de conservation</span><svg focusable="false"
+                                            aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-3"
+                                aria-labelledby="bloc-chapter-aria-3">
+                                <div class="sp-chapter-content">
+                                    <p data-test="contenu-texte">Les catégories de données susceptibles d'être traitées
+                                        en fonction de la finalité poursuivie sont les suivantes :</p>
+                                    <ul class="sp-item-list">
+                                        <li>Données relatives à l'identification de la personne ;</li>
+                                        <li>Données nécessaires à l'accomplissement d'une formalité administrative ;
+                                        </li>
+                                        <li>Données relatives à la navigation sur les sites web (horodatage, adresse IP
+                                            des usagers, etc.)</li>
+                                        <li>Données relatives à la mesure d'audience du site.</li>
+                                    </ul>
+                                    <p data-test="contenu-texte">La DILA s'engage à ce que vos données soient conservées
+                                        pendant une durée qui n'excède pas celle nécessaire au regard des finalités pour
+                                        lesquelles elles sont traitées.</p>
+                                    <ul class="sp-item-list">
+                                        <li>Les données nécessaires à la création du compte et sa gestion et les données
+                                            enregistrées dans l'espace de stockage personnel sont conservées tant que le
+                                            compte est actif.</li>
+                                        <li>Les données permettant d'accomplir une démarche administrative sont
+                                            conservées jusqu'à la transmission de la demande à l'administration
+                                            partenaire en charge d'instruire la demande.</li>
+                                        <li>Les données collectées via le formulaire de contact sont conservées cinq
+                                            ans.</li>
+                                        <li>Les données diffusées sur l'annuaire sont conservées tant que l'agent public
+                                            concerné est en poste.</li>
+                                        <li>Les données des journaux (logs) sont conservées 1 an.</li>
+                                        <li>Les données nécessaires à la production de statistiques d'audience et
+                                            d'utilisation des services en ligne sont conservées durant 25 mois dans un
+                                            format ne permettant pas l'identification des personnes par leur adresse IP,
+                                            et comportent un identifiant (relatif au cookie) conservé pour une durée
+                                            maximale de 6 mois sauf opposition de la personne concernée.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-4"
+                                    data-target="#bloc-chapter-4"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Quels_sont_vos_droits_sur_vos_données_et_comment_les_exercer_?"
+                                    aria-controls="bloc-chapter-4"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Quels sont vos droits sur vos
+                                            données et comment les exercer ?</span><svg focusable="false"
+                                            aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-4"
+                                aria-labelledby="bloc-chapter-aria-4">
+                                <div class="sp-chapter-content">
+                                    <p data-test="contenu-texte">Vous pouvez accéder et obtenir copie des données vous
+                                        concernant, vous opposer au traitement de ces données, les faire rectifier si
+                                        elles sont inexactes ou les faire effacer dans certains cas précis. Vous
+                                        disposez également d'un droit à la limitation du traitement de vos données et du
+                                        droit de retirer pour l'avenir votre consentement à tout moment, s'il servait de
+                                        base légale au traitement de vos données.</p>
+                                    <p data-test="contenu-texte">Vous pouvez exercer vos droits ou obtenir des
+                                        informations concernant le traitement de vos données personnelles directement
+                                        auprès du responsable de traitement par courriel à l'adresse suivante : <a
+                                            title="rgpd@dila.gouv.fr. -  - Nouvelle fenêtre"
+                                            href="mailto:rgpd@dila.gouv.fr" target="_blank" rel="noopener noreferrer"
+                                            data-xiti-name="Particuliers::Footer::Navigation_Directe::rgpd_dila_gouv_fr_"
+                                            data-xiti-type="exit">rgpd@dila.gouv.fr.<span aria-hidden="true"
+                                                class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a></p>
+                                    <p data-test="contenu-texte">Si la réponse apportée ne convient pas à l'usager, ce
+                                        dernier peut alors saisir le délégué à la protection des données des services du
+                                        Premier ministre, par courriel à l'adresse suivante : <a
+                                            title="dpd@pm.gouv.fr -  - Nouvelle fenêtre" href="mailto:rgpd@dila.gouv.fr"
+                                            target="_blank" rel="noopener noreferrer"
+                                            data-xiti-name="Particuliers::Footer::Navigation_Directe::dpd_pm_gouv_fr"
+                                            data-xiti-type="exit">dpd@pm.gouv.fr<span aria-hidden="true"
+                                                class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a> et par
+                                        courrier à l'adresse suivante :</p>
+                                    <p data-test="contenu-texte">Service du Premier ministre</p>
+                                    <p data-test="contenu-texte">À l'attention du délégué à la protection des données
+                                        (DPD)</p>
+                                    <p data-test="contenu-texte">56 rue de Varenne</p>
+                                    <p data-test="contenu-texte">75700 Paris</p>
+                                    <p data-test="contenu-texte">Nous vous invitons à joindre à votre demande toute
+                                        pièce permettant de justifier votre identité et le bien-fondé de votre demande.
+                                    </p>
+                                    <p data-test="contenu-texte">En tout état de cause, l'usager dispose également du
+                                        droit d'introduire une réclamation ou une plainte auprès de la Commission
+                                        Nationale de l'Informatique et des Libertés via l'adresse suivante : <a
+                                            title="https://www.cnil.fr/fr/plaintes - www.cnil.fr - Nouvelle fenêtre"
+                                            href="https://www.cnil.fr/fr/plaintes" target="_blank"
+                                            rel="noopener noreferrer"
+                                            data-xiti-name="Particuliers::Footer::Navigation_Directe::https:__www_cnil_fr_fr_plaintes"
+                                            data-xiti-type="exit">https://www.cnil.fr/fr/plaintes<span
+                                                aria-hidden="true"
+                                                class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-5"
+                                    data-target="#bloc-chapter-5"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Utilisation_de_témoins_de_connexion_(«_cookies_»)"
+                                    aria-controls="bloc-chapter-5"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Utilisation de témoins de
+                                            connexion (« cookies »)</span><svg focusable="false" aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-5"
+                                aria-labelledby="bloc-chapter-aria-5">
+                                <div class="sp-chapter-content">
+                                    <p data-test="contenu-texte">Le site service-public.fr utilise des témoins de
+                                        connexion (dits « cookies »* ) qui sont déposés sur l'ordinateur, le mobile ou
+                                        la tablette de l'usager. La liste complète des tiers qui déposent ou lisent des
+                                        cookies sur votre terminal est disponible sur la page « gestion des cookies »
+                                        accessible en bas de page du site.</p>
+                                    <h5 class="fr-h6">Cookies techniques strictement nécessaires au fonctionnement du
+                                        site</h5>
+                                    <p data-test="contenu-texte">Le site service-public.fr utilise des cookies
+                                        permettant au site de fonctionner. Ils ne peuvent pas être désactivés, sauf en
+                                        refusant tous les cookies dans les paramètres de votre navigateur. Cependant
+                                        votre expérience utilisateur risque d'être dégradée.</p>
+                                    <h5 class="fr-h6">Cookies de mesure d'audience</h5>
+                                    <p data-test="contenu-texte">Notre site utilise des cookies de mesure d'audience.
+                                        Certains de ces cookies sont strictement nécessaires au fonctionnement et aux
+                                        opérations d'administration courante du site.</p>
+                                    <p data-test="contenu-texte">Notre site utilise également des cookies de mesure
+                                        d'audience qui dépassent ces finalités, et permettent d'améliorer l'expérience
+                                        utilisateur de navigation sur notre site. Ces cookies n'étant pas strictement
+                                        nécessaires, ils sont soumis à votre consentement lors de votre première visite
+                                        sur service-public.fr. Vous pouvez modifier votre choix à tout moment en vous
+                                        rendant sur la page « Gestion des cookies ».</p>
+                                    <h5 class="fr-h6">Cookies tiers destinés à améliorer l'interactivité du site</h5>
+                                    <p data-test="contenu-texte">Le site service-public.fr s'appuie sur certains
+                                        services fournis par des tiers qui permettent :</p>
+                                    <ul class="sp-item-list">
+                                        <li>de visualiser des contenus multimédias ;</li>
+                                    </ul>
+                                    <ul class="sp-item-list">
+                                        <li>d'afficher des flux d'informations provenant des réseaux sociaux ;</li>
+                                    </ul>
+                                    <p data-test="contenu-texte">Ces tiers collecteront et utiliseront vos données de
+                                        navigation pour des finalités qui leur sont propres. Pour consulter la liste à
+                                        jour de ces tiers et leur politique de confidentialité, ainsi que pour accepter
+                                        ou refuser leurs cookies, ou pour modifier votre choix à tout moment, vous
+                                        pouvez vous rendre sur la page « Gestion des cookies » accessible en bas de page
+                                        du site.</p>
+                                    <div class="fr-highlight  fr-my-4w fr-ml-0 sp-bg-white fr-py-1w"
+                                        data-test="citation">
+                                        <p class="fr-text--bold">À savoir &nbsp;</p>
+                                        <p>*Un « cookie » est une suite d'informations, généralement de petite taille et
+                                            identifiée par un nom, qui peut être transmis à votre navigateur par un site
+                                            web sur lequel l'internaute se connecte. Le navigateur web de l'internaute
+                                            le conservera pendant une certaine durée, et le renverra au serveur web
+                                            chaque fois que l'internaute s'y re-connectera.</p>
+                                    </div>
+                                    <div class="fr-highlight  fr-my-4w fr-ml-0 sp-bg-white fr-py-1w"
+                                        data-test="citation">
+                                        <p class="fr-text--bold">Attention &nbsp;</p>
+                                        <p><strong>Pour accéder à la page de gestion des cookies, vous devez
+                                                impérativement activer java script dans votre navigateur, puis cliquer
+                                                sur "gestion des cookies" en bas de page.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-6"
+                                    data-target="#bloc-chapter-6"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Sécurité"
+                                    aria-controls="bloc-chapter-6"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Sécurité</span><svg
+                                            focusable="false" aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-6"
+                                aria-labelledby="bloc-chapter-aria-6">
+                                <div class="sp-chapter-content">
+                                    <div>
+                                        <h3 class="sp-chapter-title">Accès au site</h3>
+                                        <p data-test="contenu-texte">Le site  est protégé par un
+                                            certificat électronique, matérialisé pour la grande majorité des navigateurs
+                                            par un cadenas.</p>
+                                        <p data-test="contenu-texte">Cette protection participe à la confidentialité des
+                                            échanges, mais permet aussi aux usagers de s'assurer de l'authenticité du
+                                            site au regard d'éventuelles tentatives de filoutage :</p>
+                                        <p data-test="contenu-texte"><a
+                                                title="http://www.ssi.gouv.fr/entreprise/glossaire/h/ - www.ssi.gouv.fr - Nouvelle fenêtre"
+                                                href="https://www.ssi.gouv.fr/entreprise/glossaire/h/" target="_blank"
+                                                rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::http:__www_ssi_gouv_fr_entreprise_glossaire_h_"
+                                                data-xiti-type="exit">http://www.ssi.gouv.fr/entreprise/glossaire/h/<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                        </p>
+                                        <p data-test="contenu-texte">En aucun cas les services associés à
+                                            service-public.fr ne seront initiateur d'envois de courriels pour demander
+                                            la saisie d'informations personnelles. En particulier, le mot de passe qui
+                                            reste sous le contrôle exclusif des usagers. Seuls et dans certaines
+                                            circonstances identifiables par l'usager, des courriels légitimes pourraient
+                                            lui être adressés à des fins d'information ou d'invitation à poursuivre une
+                                            démarche engagée par voie électronique.</p>
+                                        <p data-test="contenu-texte">Lors de la connexion au site service-public.fr, il
+                                            est recommandé de copier ou de saisir manuellement l'adresse réticulaire
+                                            (URL) dans le navigateur, et d'éviter de cliquer sur des liens qui auraient
+                                            été reçus par messagerie ou qui seraient accessibles à partir de sites non
+                                            réputés.</p>
+                                        <p data-test="contenu-texte">Le certificat qui sert le site est conforme aux
+                                            exigences du Référentiel général de sécurité (RGS) et est émis par un
+                                            Prestataire de certification électronique qualifié (PSCE). La liste des
+                                            prestataires qualifiés est disponible sur :</p>
+                                        <p data-test="contenu-texte"><a
+                                                title="http://lsti-certification.fr/index.php/fr/certification/psce - lsti-certification.fr - Nouvelle fenêtre"
+                                                href="http://lsti-certification.fr/index.php/fr/certification/psce"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::http:__lsti-certification_fr_index_php_fr_certification_psce"
+                                                data-xiti-type="exit">http://lsti-certification.fr/index.php/fr/certification/psce<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-7"
+                                    data-target="#bloc-chapter-7"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Naviguer_en_confiance"
+                                    aria-controls="bloc-chapter-7"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Naviguer en
+                                            confiance</span><svg focusable="false" aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-7"
+                                aria-labelledby="bloc-chapter-aria-7">
+                                <div class="sp-chapter-content">
+                                    <div>
+                                        <h3 class="sp-chapter-title">Choisir son mot de passe</h3>
+                                        <p data-test="contenu-texte">Pour protéger vos accès et vos données, il est
+                                            nécessaire de choisir et d'utiliser des mots de passe robustes, qui sont
+                                            difficiles à retrouver à l'aide d'outils automatisés et à deviner par une
+                                            tierce personne. La force d'un mot de passe dépend de sa longueur et des
+                                            caractères le composant. Le site service-public.fr exige 8 caractères
+                                            minimum, comportant au moins une lettre en majuscule, au moins une lettre en
+                                            minuscule et au moins un chiffre</p>
+                                        <p data-test="contenu-texte">Pour information, vous pouvez vous reporter aux<a
+                                                title=" recommandations de la commission nationale de l&#39;informatique et des libertés (CNIL) - www.cnil.fr - Nouvelle fenêtre"
+                                                href="https://www.cnil.fr/fr/mot-de-passe" target="_blank"
+                                                rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::recommandations_de_la_commission_nationale_de_l_informatique_et_des_libertes__CNIL_"
+                                                data-xiti-type="exit"> recommandations de la commission nationale de
+                                                l&#39;informatique et des libertés (CNIL)<span aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="sp-chapter-title">Protéger ses moyens d'authentification</h3>
+                                        <p data-test="contenu-texte">Afin de ne pas compromettre la sécurité de vos
+                                            moyens d'authentification et de votre environnement d'utilisation, il est
+                                            recommandé de :</p>
+                                        <ul class="sp-item-list">
+                                            <li>Ne jamais demander à un tiers de créer pour vous un mot de passe ;</li>
+                                            <li>Changer de mot de passe régulièrement ;</li>
+                                            <li>Eviter de configurer les logiciels, y compris votre navigateur web, pour
+                                                qu'ils retiennent les mots de passe ;</li>
+                                            <li>Ne pas envoyer ses mots de passe en clair sur Internet, par exemple sur
+                                                sa messagerie personnelle ;</li>
+                                            <li>Ne pas noter ou stocker en clair les mots de passe dans un fichier ou un
+                                                document en libre accès, ou sur un poste informatique connecté à
+                                                Internet ;</li>
+                                            <li>Naviguer avec un navigateur à jour. Avant toute utilisation d'un
+                                                navigateur, quel qu'il soit, il convient de s'assurer le plus tôt
+                                                possible que celui-ci est à jour. Les navigateurs les plus récents
+                                                proposent tous une fonctionnalité de mise jour automatique et des moyens
+                                                de protection contre les malveillances, comme le filoutage. Ce qui est
+                                                vrai en termes de mise à jour pour un navigateur, l'est également pour
+                                                le système d'exploitation et les logiciels qui y sont installés.</li>
+                                        </ul>
+                                        <p data-test="contenu-texte">Une solution pratique pour répondre à ces exigences
+                                            avec un minimum de confort est d'utiliser un coffre-fort logiciel de type
+                                            Keepass pour stocker les mots de passe : <a
+                                                title="http://www.ssi.gouv.fr/entreprise/certification_cspn/keepass-version-2-10-portable/ - www.ssi.gouv.fr - Nouvelle fenêtre"
+                                                href="http://www.ssi.gouv.fr/entreprise/certification_cspn/keepass-version-2-10-portable/"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::http:__www_ssi_gouv_fr_entreprise_certification_cspn_keepass-version-2-10-portable_"
+                                                data-xiti-type="exit">http://www.ssi.gouv.fr/entreprise/certification_cspn/keepass-version-2-10-portable/<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                        </p>
+                                        <p data-test="contenu-texte">Consulter l'infographie de l'Agence nationale de
+                                            sécurité des systèmes d'snformation « Les bons réflexes sur Internet » : <a
+                                                title="http://www.ssi.gouv.fr/uploads/2016/06/surfezzen_mini.jpg - www.ssi.gouv.fr - Nouvelle fenêtre"
+                                                href="http://www.ssi.gouv.fr/uploads/2016/06/surfezzen_mini.jpg"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::http:__www_ssi_gouv_fr_uploads_2016_06_surfezzen_mini_jpg"
+                                                data-xiti-type="exit">http://www.ssi.gouv.fr/uploads/2016/06/surfezzen_mini.jpg<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                        </p>
+                                        <p data-test="contenu-texte">Détecter un courriel malveillant sur les conseils
+                                            de la CNIL :</p>
+                                        <p data-test="contenu-texte"><a
+                                                title="https://www.cnil.fr/fr/detectez-un-courrier-electronique-malveillant - www.cnil.fr - Nouvelle fenêtre"
+                                                href="https://www.cnil.fr/fr/detectez-un-courrier-electronique-malveillant"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::https:__www_cnil_fr_fr_detectez-un-courrier-electronique-malveillant"
+                                                data-xiti-type="exit">https://www.cnil.fr/fr/detectez-un-courrier-electronique-malveillant<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="sp-chapter-title">Menaces sur Internet</h3>
+                                        <p data-test="contenu-texte">En complément de l'attention portée à la sécurité,
+                                            voici quelques principales menaces d'Internet à surveiller :</p>
+                                        <ul class="sp-item-list">
+                                            <li>Les codes malveillants : les postes utilisés pour accéder à l'espace
+                                                personnel doivent être protégés (anti-virus et correctifs de sécurité à
+                                                jour) contre les codes malveillants afin d'assurer la légitimité des
+                                                accès au compte. Le principal risque sur service-public.fr serait le
+                                                piratage de son mot de passe.<br /><a
+                                                    title="http://www.ssi.gouv.fr/entreprise/glossaire/c/#code-malveillant-logiciel-malveillant-malicious-software-malware - www.ssi.gouv.fr - Nouvelle fenêtre"
+                                                    href="http://www.ssi.gouv.fr/entreprise/glossaire/c/#code-malveillant-logiciel-malveillant-malicious-software-malware"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    data-xiti-name="Particuliers::Footer::Navigation_Directe::http:__www_ssi_gouv_fr_entreprise_glossaire_c__code-malveillant-logiciel-malveillant-malicious-software-malware"
+                                                    data-xiti-type="exit">http://www.ssi.gouv.fr/entreprise/glossaire/c/#code-malveillant-logiciel-malveillant-malicious-software-malware<span
+                                                        aria-hidden="true"
+                                                        class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            </li>
+                                            <li>Le filoutage : le site pourrait être copié avec pour simple objectif
+                                                d'attirer les usagers à s'y connecter et récupérer leurs mots de passe.
+                                                Pour service- public.fr, un certificat électronique émis par une
+                                                autorité reconnue dans les navigateurs et qualifiée au sens du
+                                                Référentiel général de sécurité, permet aux usagers et à leur navigateur
+                                                de vérifier la légitimité du site auquel ils accèdent.<br /><a
+                                                    title="http://www.ssi.gouv.fr/entreprise/glossaire/h/ - www.ssi.gouv.fr - Nouvelle fenêtre"
+                                                    href="http://www.ssi.gouv.fr/entreprise/glossaire/h/"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    data-xiti-name="Particuliers::Footer::Navigation_Directe::http:__www_ssi_gouv_fr_entreprise_glossaire_h_"
+                                                    data-xiti-type="exit">http://www.ssi.gouv.fr/entreprise/glossaire/h/<span
+                                                        aria-hidden="true"
+                                                        class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            </li>
+                                            <li>Les pourriels (SPAM) : l'envoi de courriels non sollicités (SPAM) serait
+                                                le principal vecteur pour inciter les usagers à s'authentifier sur des
+                                                sites illégitimes (filoutage) ou infecter leurs postes via des liens ou
+                                                des pièces jointes malveillants.<br /><a
+                                                    title="http://www.ssi.gouv.fr/entreprise/glossaire/p/#pourriel-polluriel-spam - www.ssi.gouv.fr - Nouvelle fenêtre"
+                                                    href="http://www.ssi.gouv.fr/entreprise/glossaire/p/#pourriel-polluriel-spam"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    data-xiti-name="Particuliers::Footer::Navigation_Directe::http:__www_ssi_gouv_fr_entreprise_glossaire_p__pourriel-polluriel-spam"
+                                                    data-xiti-type="exit">http://www.ssi.gouv.fr/entreprise/glossaire/p/#pourriel-polluriel-spam<span
+                                                        aria-hidden="true"
+                                                        class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp-chapter" data-test="div-chapter">
+                            <h2 class="sp-chapter-title"><button class="sp-btn sp-btn-collapse collapsed"
+                                    data-toggle="collapse" type="button" aria-expanded="false" id="bloc-chapter-aria-8"
+                                    data-target="#bloc-chapter-8"
+                                    data-xiti-name="Particuliers::Footer::Depliant::Textes_de_référence_service-public.fr"
+                                    aria-controls="bloc-chapter-8"><span
+                                        class="fr-text--lg fr-mb-0 sp-chapter-btn-container"><span
+                                            class="sp-chapter-btn-number fr-mr-2w"><svg focusable="false"
+                                                aria-hidden="true" class="sp-icon sp-icon-arrow-right-line"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg></span><span class="sp-chapter-btn-text">Textes de référence
+                                            service-public.fr</span><svg focusable="false" aria-hidden="true"
+                                            class=" sp-icon-chevron  sp-icon  sp-icon-ri-arrow-down-s-line "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                            height="20">
+                                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+                                            </path>
+                                        </svg></span></button></h2>
+                            <div class="sp-chapter-collapse collapse" id="bloc-chapter-8"
+                                aria-labelledby="bloc-chapter-aria-8">
+                                <div class="sp-chapter-content">
+                                    <ul class="sp-item-list">
+                                        <li><a title="Ordonnance n°2005-1516 du 8 décembre 2005 - www.legifrance.gouv.fr - Nouvelle fenêtre"
+                                                href="http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000636232&amp;fastPos=1&amp;fastReqId=861641718&amp;categorieLien=cid&amp;oldAction=rechTexte"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::Ordonnance_n_2005-1516_du_8_decembre_2005"
+                                                data-xiti-type="exit">Ordonnance n°2005-1516 du 8 décembre 2005<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            relative aux échanges électroniques entre les usagers et les autorités
+                                            administratives et entre les autorités administratives.</li>
+                                        <li><a title="Décret n° 2016-186 du 24 février 2016 - www.legifrance.gouv.fr - Nouvelle fenêtre"
+                                                href="https://www.legifrance.gouv.fr/eli/decret/2016/2/24/PRMX1522705D/jo"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::Decret_n__2016-186_du_24_fevrier_2016"
+                                                data-xiti-type="exit">Décret n° 2016-186 du 24 février 2016<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            modifiant le décret n° 2009-730 du 18 juin 2009 relatif à l'espace de
+                                            stockage accessible en ligne pris en application de l'article 7 de
+                                            l'ordonnance n° 2005-1516 du 8 décembre 2005 relative aux échanges
+                                            électroniques entre les usagers et les autorités administratives et entre
+                                            les autorités administratives.</li>
+                                        <li><a title="Arrêté du 6 novembre 2000 - www.legifrance.gouv.fr - Nouvelle fenêtre"
+                                                href="http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000586125&amp;dateTexte="
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::Arrete_du_6_novembre_2000"
+                                                data-xiti-type="exit">Arrêté du 6 novembre 2000<span aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            relatif à la création d'un site sur internet intitulé « service-public.fr ».
+                                        </li>
+                                        <li><a title="Arrêté du 24 février 2016 - www.legifrance.gouv.fr - Nouvelle fenêtre"
+                                                href="https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=A931A24E05A2AF866EE6A1F31330C29D.tpdila12v_3?cidTexte=JORFTEXT000032106812&amp;dateTexte=&amp;oldAction=rechJO&amp;categorieLien=id&amp;idJO=JORFCONT000032106756"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::Arrete_du_24_fevrier_2016"
+                                                data-xiti-type="exit">Arrêté du 24 février 2016<span aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            portant intégration au site internet « service-public.fr » d'un téléservice
+                                            permettant à l'usager d'accomplir des démarches administratives en tout ou
+                                            partie dématérialisées et d'avoir accès à des services d'informations
+                                            personnalisés.</li>
+                                        <li><a title="Délibération n° 2015-411 du 12 novembre 2015 - www.legifrance.gouv.fr - Nouvelle fenêtre"
+                                                href="https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=A931A24E05A2AF866EE6A1F31330C29D.tpdila12v_3?cidTexte=JORFTEXT000032107742&amp;dateTexte=&amp;oldAction=rechJO&amp;categorieLien=id&amp;idJO=JORFCONT000032106756"
+                                                target="_blank" rel="noopener noreferrer"
+                                                data-xiti-name="Particuliers::Footer::Navigation_Directe::Deliberation_n__2015-411_du_12_novembre_2015"
+                                                data-xiti-type="exit">Délibération n° 2015-411 du 12 novembre 2015<span
+                                                    aria-hidden="true"
+                                                    class="fr-icon-external-link-line fr-fi--sm fr-ml-1v"></span></a>
+                                            portant avis sur un projet d'arrêté relatif à la mise en œuvre de
+                                            traitements de données à caractère personnel intégrés au dispositif dénommé
+                                            « service-public.fr » pour permettre, en un point d'accès unifié pour
+                                            l'usager, d'accomplir des démarches administratives en tout ou partie
+                                            dématérialisées et de bénéficier de services d'informations personnalisées
+                                            (demande d'avis n° 1878256).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </main>
+    </div>
+    </section>
+    <script data-type="application/javascript" data-test="eulerian">
+        window.dsfr = {
+        analytics: {
+        domain: "jcmm.service-public.fr",
+        page: {
+        id: "P10001",
+        title: "Donnees_personnelles_et_securite",
+        labels: ["autre", "footer_P10001", "Footer", "Donnees_personnelles_et_securite",
+        ""],
+        categories: ["Footer", "Donnees_personnelles_et_securite", ""],
+        template: "footer_P10001",
+        group: "navigation",
+        theme: "autre",
+        current: "0"
+        },
+        user: {
+        uid: "",
+        status: "anonym",
+        language: "FR",
+        type: "autre"
+        },
+        site: {
+        entity: "SPM || DILA",
+        language: "FR",
+        target: "information",
+        type: "standard",
+        }
+        }
+        };
+        </script>
+        <script> document.urlResourcesRoot = "https:\/\/www.service-public.fr\/resources\/v-2d2e4bb8f0";</script>
+        <script type="module"
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/dsfr/dsfr/dsfr.module.min.js"></script>
+        <script type="text/javascript" nomodule
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/dsfr/dsfr/dsfr.nomodule.min.js"></script>
+        <script type="module" nomodule
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/dsfr/dsfr/analytics.module.min.js"></script>
+        <script type="text/javascript" nomodule
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/dsfr/dsfr/analytics.nomodule.min.js"></script>
+        <script type="text/javascript"
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/js/require.js"></script>
+        <script type="text/javascript"
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/js/common.js"></script>
+        <script type="text/javascript"
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/dsfr-1.9/js/configRgpdPart.js"></script>
+        <script type="text/javascript"
+            src="https://www.service-public.fr/resources/v-2d2e4bb8f0/assets/js/coperia.js"></script>
+        <script>
+            require(['entreprendre/vdd', 'domReady'], function (vdd, domReady) {
+                domReady(function () {
+                    vdd.loadInfoBulleDefinitionTooltip();
+                    vdd.loadInfoBulleAbreviation();
+                    vdd.loadTooltip();
+                    vdd.initFocusInterlocuteur();
+                });
+            });
+        </script>
+        <script data-test="script_dropdown_list">
+            require(['jquery', 'domReady'], function ($, domReady) {
+                domReady(function () {
+                    var currentURL = window.location.href;
+                    var langParam = new URL(currentURL).searchParams.get('lang');
+                    var currentLanguage = (langParam === 'en') ? 'en' : 'fr';
+                    $('.fr-translate__language').removeAttr('aria-current');
+                    if (currentLanguage === 'en') {
+                        $('#language-en').attr('aria-current', 'true');
+                    } else {
+                        $('#language-fr').attr('aria-current', 'true');
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            window.rsConf = { general: { usePost: true } };
+        </script>
+
+                                
+                                {% endblock %}

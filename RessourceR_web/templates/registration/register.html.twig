@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block footer %}{% endblock %}
+{% block nav %}{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('assets/css/register.css') }}">
+{% endblock %}
+
+{% block body %}
+{% for flash_error in app.flashes('verify_email_error') %}
+    <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+{% endfor %}
+
+<div class="outer">
+    <i style="cursor:pointer;" class="fa-solid fa-circle-chevron-left"><a href="{{ path('app_home') }}">Retour</a></i>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Inscription</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        {{ form_start(registrationForm) }}
+                        <div class="form-group pt-3">
+                            <div class="input-field">
+                                <span class="fa fa-user p-2"></span>
+                                {{ form_row(registrationForm.usr_nom) }}
+                            </div>
+                        </div>
+
+                        <div class="form-group pt-3">
+                            <div class="input-field">
+                                <span class="fa fa-user p-2"></span>
+                                {{ form_row(registrationForm.usr_prenom) }}
+                            </div>
+                        </div>
+
+                        <div class="form-group pt-3">
+                            <div class="input-field">
+                                <span class="fa fa-envelope p-2"></span>
+                                {{ form_row(registrationForm.email) }}
+                            </div>
+                        </div>
+
+                        <div class="form-group pt-3">
+                            <div class="input-field">
+                                <span class="fa fa-lock p-2"></span>
+                                {{ form_row(registrationForm.plainPassword, { label: 'Mot de passe' }) }}
+                            </div>
+                        </div>
+
+                        <div class="form-group pt-3">
+                            <div class="center_texte">
+                                {{ form_row(registrationForm.agreeTerms) }}
+                            </div>
+                        </div>
+
+                        <a href="{{ path('app_modal') }}" id="myButton" class="btn btn-primary btn-block mt-4 w-100">S'inscrire</a>
+
+                        {{ form_end(registrationForm) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
