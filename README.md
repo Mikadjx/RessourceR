@@ -1,6 +1,6 @@
 # 🚀 Ressource Relationnelles
 
-<img align="center" height="400" src="https://raw.githubusercontent.com/RessourceR/main/public/assets/images/ressources_screen.png"  />
+<img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef"  />
 
 ## Description
 
