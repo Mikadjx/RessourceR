@@ -1,7 +1,5 @@
 # 🚀 Ressource Relationnelles
 
-<img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef"  />
-
 <img align="center" height="200" src="https://github.com/Mikadjx/RessourceR/assets/109203536/dac12944-060d-4101-b9ea-4cf65ea162db"  />
 
 
@@ -62,6 +60,11 @@ Si vous souhaitez tester l'application, suivez les étapes ci-dessous pour clone
 3. Effectuez et enregistrez vos modifications en utilisant des commits clairs et concis 
 4. Poussez vos modifications vers votre fork du projet sur GitHub 
 5. Ouvrez une Pull Request pour soumettre vos modifications à l'équipe de développement.
+
+## Prototype Mobile
+
+<img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef"  />
+
 
 ---
   
