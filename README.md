@@ -1,9 +1,9 @@
 # 🚀 Ressource Relationnelles
-<div align="center">
-<img align="center" height="200" src="https://github.com/Mikadjx/RessourceR/assets/109203536/dac12944-060d-4101-b9ea-4cf65ea162db"  />
-  <img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef"  />
-
+<div style="text-align: center;">
+    <img style="margin-right: 30px;" height="200" src="https://github.com/Mikadjx/RessourceR/blob/main/assets/109203536/dac12944-060d-4101-b9ea-4cf65ea162db?raw=true" />
+    <img height="400" src="https://github.com/Mikadjx/RessourceR/blob/main/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef?raw=true" />
 </div>
+
 
 
 ## Description
