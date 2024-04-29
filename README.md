@@ -63,9 +63,9 @@ Si vous souhaitez tester l'application, suivez les étapes ci-dessous pour clone
 5. Ouvrez une Pull Request pour soumettre vos modifications à l'équipe de développement.
 
 ## Prototype Mobile
-
+<div align="center">
 <img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef"  />
-
+</div>
 
 ---
   
