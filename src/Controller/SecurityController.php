@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
@@ -11,8 +11,8 @@ class SecurityController extends AbstractController
 {
     // Formulaire de connexion 
 
-    #[Route(path: '/login', name: 'app_login')]
-    public function login(AuthenticationUtils $authenticationUtils): Response
+    #[Route(path: '/login', name: 'app_login', methods:['POST'])]
+    public function login(AuthenticationUtils $authenticationUtils): JsonResponse
     {
     //    Si l'utilisateur est déjà connecté, redirige-le vers la page d'accueil
     //     if ($this->getUser()) {
@@ -25,7 +25,7 @@ class SecurityController extends AbstractController
         // Dernier nom d'utilisateur saisi par l'utilisateur
         $lastUsername = $authenticationUtils->getLastUsername();
 
-        return $this->render('security/login.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
+        return $this->json( ['last_username' => $lastUsername, 'error' => $error]);
     }
     //Deconnexion 
     #[Route(path: '/logout', name: 'app_logout')]

@@ -13,3 +13,4 @@ burgerMenuButton.onclick = function (){
     document.getElementById('myButton').addEventListener('click', function () {
         $('#myModal').modal('show');
     });
+    

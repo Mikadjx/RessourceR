@@ -6,10 +6,11 @@ use App\Entity\Utilisateurs;
 use App\Form\RegistrationFormType;
 use App\Security\EmailVerifier;
 use Doctrine\ORM\EntityManagerInterface;
+use JMS\Serializer\SerializerInterface;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
@@ -28,9 +29,10 @@ class RegistrationController extends AbstractController
     }
  //Route pour la page inscription -> Injection d'un sysème d'authentification sécurisée
 
-    #[Route('/register', name: 'app_register')]
-    public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher ,EntityManagerInterface $entityManager): Response
+    #[Route('register', name: 'app_register',methods:["POST"])]
+    public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher ,EntityManagerInterface $entityManager): JsonResponse
     {
+
         $user = new Utilisateurs();
         $user ->setRoles(['ROLE_USER']);
         $form = $this->createForm(RegistrationFormType::class, $user);
@@ -57,17 +59,17 @@ class RegistrationController extends AbstractController
                     ->htmlTemplate('registration/confirmation_email.html.twig')
                     ->context([
                         'prenom' => $user->getUsrPrenom(),
-                        'nom' => $user->getUsrNom(),]));
-                        return $this->redirectToRoute('app_modal');  //Ajout de modal pour prévenir de: Vous y êtes presque ! Dans quelques minutes Vous allez recevoir un e-mail afin de confirmer votre demande d'inscription  
-        }
+                        'nom' => $user->getUsrNom(),]));  
+        return $this->redirectToRoute('app_home');
+                    }
 
-        return $this->render('registration/register.html.twig', [
+        return $this->json( [
             'registrationForm' => $form->createView(),
         ]);
     }
 //Fonction pour veirifier l'identité de l'utilisateur par mail 
     #[Route('/verify/email', name: 'app_verify_email')]
-    public function verifyUserEmail(Request $request, TranslatorInterface $translator): Response
+    public function verifyUserEmail(Request $request, TranslatorInterface $translator): JsonResponse
     {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 

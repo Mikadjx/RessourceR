@@ -10,7 +10,7 @@ use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
@@ -35,7 +35,7 @@ class ResetPasswordController extends AbstractController
      * Afficher et traiter le formulaire pour demander une réinitialisation de mot de passe
      */
     #[Route('', name: 'app_forgot_password_request')]
-    public function request(Request $request, MailerInterface $mailer, TranslatorInterface $translator): Response
+    public function request(Request $request, MailerInterface $mailer, TranslatorInterface $translator): JsonResponse
     {
         $form = $this->createForm(ResetPasswordRequestFormType::class);
         $form->handleRequest($request);
@@ -48,7 +48,7 @@ class ResetPasswordController extends AbstractController
             );
         }
 
-        return $this->render('reset_password/request.html.twig', [
+        return $this->json( [
             'requestForm' => $form->createView(),
         ]);
     }
@@ -57,7 +57,7 @@ class ResetPasswordController extends AbstractController
      * Page de confirmation après qu'un utilisateur a demandé une réinitialisation de mot de passe
      */
     #[Route('/check-email', name: 'app_check_email')]
-    public function checkEmail(): Response
+    public function checkEmail(): JsonResponse
     {
         // Générer un jeton factice si l'utilisateur n'existe pas ou si quelqu'un accède directement à cette page
         // Cela empêche de révéler si un utilisateur a été trouvé avec l'adresse e-mail donnée ou non
@@ -65,7 +65,7 @@ class ResetPasswordController extends AbstractController
             $resetToken = $this->resetPasswordHelper->generateFakeResetToken();
         }
 
-        return $this->render('reset_password/check_email.html.twig', [
+        return $this->json( [
             'resetToken' => $resetToken,
         ]);
     }
@@ -74,7 +74,7 @@ class ResetPasswordController extends AbstractController
      * Valide et traite l'URL de réinitialisation que l'utilisateur a cliquée dans son e-mail
      */
     #[Route('/reset/{token}', name: 'app_reset_password')]
-    public function reset(Request $request, UserPasswordHasherInterface $passwordHasher, TranslatorInterface $translator, string $token = null): Response
+    public function reset(Request $request, UserPasswordHasherInterface $passwordHasher, TranslatorInterface $translator, string $token = null): JsonResponse
     {
         if ($token)
         {
@@ -127,7 +127,7 @@ class ResetPasswordController extends AbstractController
             return $this->redirectToRoute('app_home');
         }
 
-        return $this->render('reset_password/reset.html.twig', [
+        return $this->json([
             'resetForm' => $form->createView(),
         ]);
     }

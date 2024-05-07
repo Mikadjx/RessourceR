@@ -8,10 +8,10 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DataPersonalSecurityController extends AbstractController
 {
-    #[Route('/data/personal/security', name: 'app_data_personal_security')]
-    public function index(): Response
+    #[Route('data/personal/security', name: 'app_data_personal_security')]
+    public function index(): JsonResponse
     {
-        return $this->render('data_personal_security/index.html.twig', [
+        return $this->json([
             'controller_name' => 'DataPersonalSecurityController',
         ]);
     }

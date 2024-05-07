@@ -9,7 +9,8 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
-use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Constraints as Assert;  
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: RessourcesRepository::class)]
 #[Vich\Uploadable]
@@ -18,12 +19,15 @@ class Ressources
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['ressources:read'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['ressources:read'])]
     private ?string $res_titre = null;
 
     #[ORM\Column(type: Types::TEXT)]
+    #[Groups(['ressources:read'])]
     private ?string $res_content = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
@@ -46,12 +50,15 @@ class Ressources
 
     
     #[Vich\UploadableField(mapping: 'ressources', fileNameProperty: 'imageName')]
+    #[Groups(['ressources:read'])]
     private ?File $imageFile = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['ressources:read'])]
     private ?string $imageName = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['ressources:read'])]
     private ?int $imageSize = null;
 
     #[ORM\Column(nullable: true)]
