@@ -68,7 +68,9 @@ Si vous souhaitez tester l'application, suivez les étapes ci-dessous pour clone
 <img align="center" height="400" src="https://github.com/Mikadjx/RessourceR/assets/109203536/7bedb18c-d9fe-427e-8d89-e2c9915196ef"  />
 </div>
 
-[Visitez Volt MazeCity](https://volt.mazecity.eu/)
+<div align="center">
+[Voici un aperçu du site web](https://volt.mazecity.eu/)
+</div>
 
 
 ---
