@@ -1,5 +1,5 @@
 <div align="center">
-<h1>🚀 Ressource Relationnelles</h1>
+<h1>Ressource Relationnelles</h1>
 </div>
 <div align="center">
     <img align="center" height="200" src="https://github.com/Mikadjx/RessourceR/assets/109203536/dac12944-060d-4101-b9ea-4cf65ea162db" />
@@ -12,31 +12,31 @@ Ressource Relationnelles est une plateforme conçue pour améliorer la qualité 
 ### Fonctionnalités
 
 #### Citoyen non connecté :
-- 📋 Afficher, lister, filtrer et trier les ressources restreintes ou non.
-- 📝 Créer un compte citoyen pour être vérifié et obtenir plus de droits.
+- Afficher, lister, filtrer et trier les ressources restreintes ou non.
+- Créer un compte citoyen pour être vérifié et obtenir plus de droits.
 
 #### Citoyen connecté :
-- 🛠️ Créer et éditer une ressource.
-- 📤 Partager une publication avec d'autres participants en les invitant et en échangeant des messages.
-- 💬 Ajouter des commentaires et répondre à d'autres commentaires.
-- ❤️ Ajouter et supprimer des ressources aux favoris.
-- 🏆 Définir une ressource comme exploitée ou non.
-- 📌 Mettre de côté une ressource ou l'annuler.
-- 📊 Afficher un tableau récapitulant la progression des ressources.
-- 🎮 Démarrer une ressource de type Activité ou Jeu.
+- Créer et éditer une ressource.
+- Partager une publication avec d'autres participants en les invitant et en échangeant des messages.
+- Ajouter des commentaires et répondre à d'autres commentaires.
+- Ajouter et supprimer des ressources aux favoris.
+- Définir une ressource comme exploitée ou non.
+- Mettre de côté une ressource ou l'annuler.
+- Afficher un tableau récapitulant la progression des ressources.
+- Démarrer une ressource de type Activité ou Jeu.
 
 #### Modérateur :
-- 🕵️ Valider une ressource pour être publiée.
-- 💬 Modérer les commentaires des ressources et répondre aux commentaires si besoin.
+- Valider une ressource pour être publiée.
+- Modérer les commentaires des ressources et répondre aux commentaires si besoin.
 
 #### Administrateur :
-- 🛠️ Ajouter, éditer, supprimer ou suspendre des ressources.
-- 📂 Créer, éditer et supprimer des catégories de ressources.
-- 🚫 Désactiver et réactiver des comptes citoyens.
-- 📈 Accéder à un tableau de bord des statistiques avec visualisation et export des consultations, recherches, exploitation et création de ressources.
+- Ajouter, éditer, supprimer ou suspendre des ressources.
+- Créer, éditer et supprimer des catégories de ressources.
+- Désactiver et réactiver des comptes citoyens.
+- Accéder à un tableau de bord des statistiques avec visualisation et export des consultations, recherches, exploitation et création de ressources.
 
 #### Super-administrateur :
-- 👑 Créer un compte modérateur, administrateur et super-administrateur.
+- Créer un compte modérateur, administrateur et super-administrateur.
 
 ## Technologies Utilisées
 
